@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            background-image:url("darksky.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+        }   
+        .ba{
+            position:absolute;
+            bottom:0;
+            right:100px;
+            height:800px
+
+        } 
+        .navbar{
+            background:linear-gradient(45deg,black,rgb(234, 15, 234),black);
+            /* border-radius:10px; */
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 10px 20px;
+           
+        }
+        
+        .navbar li{
+            float:right;
+            list-style: none;
+            margin:25px;
+            margin-right:20px;
+         }
+        .navbar ul{
+            overflow: auto;
+            margin-right:100px;
+
+        }
+        .navbar li a{
+            color:white;
+            text-decoration:none;
+            padding:5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar li a:hover{
+            color:rgb(215, 52, 52)
+            
+        }
+        .logo {
+            display: flex;
+            align-items: center; /* Vertically center the items */
+        }    
+        .logo img {
+            height: 70px;
+            margin-right: 25px; 
+        }
+
+        .logo a{
+            display:flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+        .logo span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .tt{
+            font-family:monospace;
+            font-size:65px;
+            font-weight:bold;
+            color: white;
+            position:absolute;
+            left:60px;
+            top:350px
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <a href="index.html">
+                <img src="quantum.png">
+                <span>QuantumVerse.ltd</span>
+               </a>  
+            </div>
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="colaboration.html">Collaboration</a></li>
+                <li><a href="overvision.html">Over Vision</a></li>
+                <li><a href="manageemployee.html">Manage Employees</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="blackastro.png"  class="ba">
+    <p class="tt">"Launch Your Career to<br> New Heights - Join  the<br> Future of Space<br> Exploration!"</p>
+    
+</body>
+</html>
