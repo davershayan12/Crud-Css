@@ -123,11 +123,27 @@
             font-size: 15px;
             padding:15px 20px;
         }
-        .p{
-            top:220px;
-            right:100px;
+        /* Green button styles */
+        .greenbutton{
+            border:none;
+            border-radius: 50px;
+            background-color:#389038; 
+            color:white;
+            font-size: 15px;
+            padding:15px 35px;
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+        /* Green button hover effect */
+        .greenbutton:hover {
+            background-color: darkgreen;
         }
 
+        .button-container {
+            position: absolute;
+            top: 220px;
+            right: 100px;
+        }
     </style>
 </head>
 <body>
@@ -155,7 +171,10 @@
         <div class="bbb"></div>
     </div>
     <div class="pp">Manage Employees</div>
-    <div class="p"><button><a href="#">Manage employee</a></button></div>
+    <div class="button-container">
+        <!-- Green button positioned on the right -->
+        <button class="greenbutton"><a href="manageemployee.html" style="text-decoration: none; color: white;">Add Employee</a></button>
+    </div>
 
 </body>
 </html>
