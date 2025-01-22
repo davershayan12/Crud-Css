@@ -2,146 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            /* box-sizing: border-box; */
-        }
-        body{
-            background-image:url("darksky.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size:100% 100%;
-        }   
-        .ba{
-            position:absolute;
-            bottom:0;
-            left:0px;
-            height:800px
-
-        } 
-        .navbar{
-            background:linear-gradient(45deg,black,rgb(234, 15, 234),black);
-            /* border-radius:10px; */
-            position: fixed; 
-            width: 100%; 
-            top: 0; 
-            display: flex;
-            align-items: center; 
-            justify-content: space-between; 
-            padding: 10px 20px;
-           
-        }
-        
-        .navbar li{
-            float:right;
-            list-style: none;
-            margin:25px;
-            margin-right:20px;
-         }
-        .navbar ul{
-            overflow: auto;
-            margin-right:100px;
-
-        }
-        .navbar li a{
-            color:white;
-            text-decoration:none;
-            padding:5px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .navbar li a:hover{
-            color:rgb(215, 52, 52)
-            
-        }
-        .logo {
-            display: flex;
-            align-items: center; /* Vertically center the items */
-        }    
-        .logo img {
-            height: 70px;
-            margin-right: 25px; 
-        }
-
-        .logo a{
-            display:flex;
-            align-items: center;
-            color: white;
-            text-decoration: none;
-        }
-        .logo span{
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .tt{
-            font-family:monospace;
-            font-size:65px;
-            font-weight:bold;
-            color: white;
-            position:absolute;
-            left:60px;
-            top:350px
-
-        }
-        .flex{
-            display:flex;
-            justify-content: center;
-        }
-        .l{
-            position: absolute;
-            top:150px;
-            font-size: 40px;
-            font-weight: bold;
-            color: white;
-            font-family: monospace;
-        }
-        .sq{
-            height:400px;
-            width: 700px;
-            position:absolute;
-            right:200px;
-            top: 300px;
-            color: white;
-            font-family: bold;
-            font-size: 25px;
-        }
-        
-
-        
-
-
-    </style>
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-               <a href="index.html">
-                <img src="quantum.png">
-                <span>QuantumVerse.ltd</span>
-               </a>  
-            </div>
-            <ul>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="colaboration.html">Collaboration</a></li>
-                <li><a href="overvision.html">Over Vision</a></li>
-                <li><a href="manageemployee.html">Manage Employees</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Gym Logo">
+        <h1>About Our Gym</h1>
     </header>
-    <img src="whiteastro.png"  class="ba">
-    <div class="flex"><p class="l">Recruitment Leadership</p></div>
-    <p class="sq">Recruitment leadership for astronaut selection requires a strategic blend of vision, expertise, and adaptability. Leaders in this field must be able to identify candidates with exceptional technical skills, physical fitness, and the mental resilience needed to thrive in the challenging and high-pressure environment of space. They must also ensure that the recruitment process is inclusive, drawing from a diverse pool of talent, while fostering a culture of collaboration and innovation. Effective recruitment leadership involves designing rigorous selection criteria, building strong relationships with space agencies and research institutions, and guiding candidates through a comprehensive evaluation process that tests not only their technical abilities but also their psychological endurance and ability to work as part of a team. This leadership is essential in shaping the future of space exploration and ensuring that only the most qualified individuals are selected to embark on missions that push the boundaries of human achievement.
-
-
-
-    </p>
-    
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Our Story</h2>
+        <p>Learn more about our journey and mission.</p>
+    </div>
 </body>
 </html>
